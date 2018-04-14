@@ -86,6 +86,7 @@ int main(int argc, char* argv[]){
 
 	digit = *argv[3]-48;
 	looptime = *argv[4]-48;
+	cout <<digit <<looptime<<endl;
 	/* Input data from the file */
 	
 	ifs >> num;
