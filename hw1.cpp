@@ -98,7 +98,8 @@ int main(int argc, char* argv[]){
 	/* Input data from the file */
 	
 	ifs >> num;
-	long long a[num];
+	long long *a;
+	a= new long long [num];
 	int i=0;
 	while (!ifs.eof()){
 		long long tmp_num;
