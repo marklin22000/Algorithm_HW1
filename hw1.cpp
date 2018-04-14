@@ -28,7 +28,7 @@ void printarray(long long *a)
 		cout<< a[num-1]<<endl;
 }
 
-void quicksort(int p, long long *a, int l, int r)
+void quicksort(long long *a, int l, int r)
 {
 	long long x;
 	int i;
@@ -36,11 +36,11 @@ void quicksort(int p, long long *a, int l, int r)
 	long long d = pow(factor,p);
 	if(l<r)
 	{
-		x = (a[r]/d)%factor;
+		x = a[r];
 		i = l-1;
 		for(j=l; j<r;j++)
 		{			
-			if( (a[j]/d)%factor <= x)
+			if( a[j] <= x)
 			{
 				i++;
 				swap(&a[i],&a[j]);
@@ -55,13 +55,14 @@ void quicksort(int p, long long *a, int l, int r)
 
 void sort(int num,long long *a){
 	int loopcount = 0;
-	while(loopcount<looptime)
-	{
+	//while(loopcount<looptime)
+	//{
 		//printarray(a);
 		//cout<<"///////////////"<<endl;
-		quicksort(loopcount,a,0,num-1);
-		loopcount++;
-	}
+		//quicksort(loopcount,a,0,num-1);
+	quicksort(a,0,num-1);
+		//loopcount++;
+	//}
 }
 
 int main(int argc, char* argv[]){
