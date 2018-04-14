@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	for( i = 0; i < num; i++)
 	{
 		temp = rand()*rand();
-		ofs << temp <<" " << endl;
+		ofs << temp <<" ";
 	}    
 	return 0;
 }
