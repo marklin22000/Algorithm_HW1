@@ -10,11 +10,11 @@ using namespace std;
 int digit = 4;
 long long factor = 10^digit;
 
-void swap(int *x,int *y)
+void swap(long long *x,long long *y)
 {
 	long long temp;
 	temp = *x;
-	x* = *y;
+	*x = *y;
 	*y = temp;
 }
 
