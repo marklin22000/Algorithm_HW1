@@ -102,7 +102,7 @@ int main(int argc, char* argv[]){
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	for (int i = 0; i < a.size(); i++)		
+	for (int i = 0; i < a.length(); i++)		
 		cout << a[i] << " -> ";
 	
 	
@@ -111,7 +111,7 @@ int main(int argc, char* argv[]){
 	ofs << "CPU Run time: " << run_time << endl;
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	for (int i = 0; i < a.size(); i++)		
+	for (int i = 0; i < a.length(); i++)		
 		cout << a[i] << " -> ";
 		
 	ofs.close();
