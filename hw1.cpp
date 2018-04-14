@@ -7,6 +7,7 @@
 #include <sys/resource.h>
 using namespace std;
 
+int num;
 int digit = 0;
 long long factor = 10^digit;
 
@@ -76,7 +77,6 @@ int main(int argc, char* argv[]){
 	}
 	
 	/* Input data from the file */
-	int num;
 	
 	ifs >> num;
 	long long a[num];
