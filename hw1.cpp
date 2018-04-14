@@ -77,12 +77,12 @@ int main(int argc, char* argv[]){
 	long long num;
 	
 	ifs >> num;
-	long long numDictionary[num];
+	long long a[num];
 	int i=0;
 	while (!ifs.eof()){
 		long long tmp_num;
 		ifs >> tmp_num;
-		numDictionary[i] = tmp_num;
+		a[i] = tmp_num;
 		i++;
 	}
 	ifs.close();
@@ -91,7 +91,7 @@ int main(int argc, char* argv[]){
 	/* Function */
 	
 	const clock_t start_time = clock();
-	sort(num,numDictionary);
+	sort(num,a);
 	double run_time = (double)(clock() - start_time) / CLOCKS_PER_SEC;
 
 	struct rusage r_usage;
@@ -102,8 +102,8 @@ int main(int argc, char* argv[]){
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	for (int i = 0; i < answer.size(); i++)		
-		cout << answer[i] << " -> ";
+	for (int i = 0; i < a.size(); i++)		
+		cout << a[i] << " -> ";
 	
 	
 	
@@ -111,8 +111,8 @@ int main(int argc, char* argv[]){
 	ofs << "CPU Run time: " << run_time << endl;
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	for (int i = 0; i < answer.size(); i++)		
-		cout << answer[i] << " -> ";
+	for (int i = 0; i < a.size(); i++)		
+		cout << a[i] << " -> ";
 		
 	ofs.close();
 	
