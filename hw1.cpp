@@ -9,8 +9,9 @@
 using namespace std;
 
 int num;
-int digit = 100;
+int digit = 4;
 long long factor = pow(10,digit);
+int looptime = 3;
 
 void swap(long long *x,long long *y)
 {
@@ -53,13 +54,11 @@ void quicksort(int p, long long *a, int l, int r)
 }
 
 void sort(int num,long long *a){
-
-	int looptime = 1;
 	int loopcount = 0;
 	while(loopcount<looptime)
 	{
-		printarray(a);
-		cout<<"///////////////"<<endl;
+		//printarray(a);
+		//cout<<"///////////////"<<endl;
 		quicksort(loopcount,a,0,num-1);
 		loopcount++;
 	}
@@ -122,7 +121,7 @@ int main(int argc, char* argv[]){
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	ofs << "ans: ";
 	for (int i = 0; i < num; i++)		
-		ofs << a[i] << " -> ";
+		ofs << a[i] << "  ";
 		
 	ofs.close();
 	
