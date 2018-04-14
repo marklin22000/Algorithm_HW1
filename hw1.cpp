@@ -37,6 +37,8 @@ void quicksort(int p, long long *a, int l, int r)
 			}
 		}
 		swap(&a[i+1],&a[r]);
+		for (int i = 0; i < num; i++)		
+			cout << a[i] << " -> ";
 		quicksort(p,a,l,i);
 		quicksort(p,a,i+2,r);
 	}
