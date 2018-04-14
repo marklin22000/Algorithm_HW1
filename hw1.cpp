@@ -83,8 +83,8 @@ int main(int argc, char* argv[]){
 		cout << "Output file: " << argv[2] << " cannot be opened." << endl;
 		return -1;
 	}
-	digit = stoi(argv[3]);
-	looptime = stoi(argv[4]);
+	digit = atoi( argv[3].c_str() );
+	looptime = atoi( argv[4].c_str() );
 	/* Input data from the file */
 	
 	ifs >> num;
