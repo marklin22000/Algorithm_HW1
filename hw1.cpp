@@ -83,10 +83,14 @@ int main(int argc, char* argv[]){
 		cout << "Output file: " << argv[2] << " cannot be opened." << endl;
 		return -1;
 	}
+	digit = 0;
+	looptime = 0;
+	for(int kk=0;argv[3][kk]!=0;kk++)
+		digit +=(argv[3][kk]-48)*pow(10,kk);
+	for(int kk=0;argv[4][kk]!=0;kk++)
+		looptime +=(argv[4][kk]-48)*pow(10,kk);
 
-	digit = *argv[3]-48;
-	looptime = *argv[4]-48;
-	cout <<digit <<looptime<<endl;
+	cout <<digit <<" "<<looptime<<endl;
 	/* Input data from the file */
 	
 	ifs >> num;
