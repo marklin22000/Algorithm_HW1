@@ -5,6 +5,7 @@
 #include <ctime>
 #include <unistd.h>
 #include <sys/resource.h>
+#include <math.h>
 using namespace std;
 
 int num;
