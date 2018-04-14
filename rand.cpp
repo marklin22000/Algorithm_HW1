@@ -12,11 +12,11 @@ long long num = pow(10,8);
 int main(int argc, char* argv[])
 {
 	long long i;
-	long long temp;
+	unsigned long long temp;
 	srand( time(NULL) );
 
 	ofstream ofs(argv[1]);
-	ofs << "num" << endl;
+	ofs << num << endl;
 	for( i = 0; i < num; i++)
 	{
 		temp = rand()*rand();
