@@ -7,7 +7,7 @@
 #include <sys/resource.h>
 using namespace std;
 
-int digit = 4;
+int digit = 0;
 long long factor = 10^digit;
 
 void swap(long long *x,long long *y)
@@ -18,12 +18,12 @@ void swap(long long *x,long long *y)
 	*y = temp;
 }
 
-void quicksort(int p, long long *a, long long l, long long r)
+void quicksort(int p, long long *a, int l, int r)
 {
 	long long x;
 	int i;
 	int j;
-	int d = factor^(p);
+	long long d = factor^(p);
 	if(l<r)
 	{
 		x = (a[r]/d)%factor;
@@ -42,9 +42,9 @@ void quicksort(int p, long long *a, long long l, long long r)
 	}
 }
 
-void sort(long long num,long long *a){
+void sort(int num,long long *a){
 
-	int looptime = 3;
+	int looptime = 1;
 	int loopcount = 0;
 	while(loopcount<looptime)
 	{
@@ -74,7 +74,7 @@ int main(int argc, char* argv[]){
 	}
 	
 	/* Input data from the file */
-	long long num;
+	int num;
 	
 	ifs >> num;
 	long long a[num];
