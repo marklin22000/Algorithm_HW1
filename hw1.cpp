@@ -9,9 +9,9 @@
 using namespace std;
 
 int num;
-int digit = 4;
+int digit ;
 long long factor = pow(10,digit);
-int looptime = 3;
+int looptime ;
 
 void swap(long long *x,long long *y)
 {
@@ -66,8 +66,8 @@ void sort(int num,long long *a){
 
 int main(int argc, char* argv[]){
 	/* Input check */
-	if (argc < 3){
-		cout << "Usage: " << argv[0] << " <input_file> <output_file>" << endl;
+	if (argc < 5){
+		cout << "Usage: " << argv[0] << " <input_file> <output_file> <digit> <looptime>" << endl;
 		return -1;
 	}
 	
@@ -83,7 +83,8 @@ int main(int argc, char* argv[]){
 		cout << "Output file: " << argv[2] << " cannot be opened." << endl;
 		return -1;
 	}
-	
+	digit = stoi(argv[3]);
+	looptime = stoi(argv[4]);
 	/* Input data from the file */
 	
 	ifs >> num;
