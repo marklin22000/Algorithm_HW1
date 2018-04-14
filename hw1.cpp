@@ -57,6 +57,8 @@ void sort(int num,long long *a){
 	int loopcount = 0;
 	while(loopcount<looptime)
 	{
+		printarray(a);
+		cout<<"///////////////"<<endl;
 		quicksort(loopcount,a,0,num-1);
 		loopcount++;
 	}
