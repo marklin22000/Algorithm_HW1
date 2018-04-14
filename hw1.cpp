@@ -51,8 +51,6 @@ void sort(long long num,long long *a){
 		quicksort(loopcount,a,0,num-1);
 		loopcount++;
 	}
-
-	return numDictionary;
 }
 
 int main(int argc, char* argv[]){
@@ -103,11 +101,9 @@ int main(int argc, char* argv[]){
 	cout << "=====  Answer Report  =====" << endl;
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
-	if (answer.size() > 0){
-		cout << "ans: ";
-		for (int i = 0; i < answer.size(); i++)		
-			cout << answer[i] << " -> ";
-	} 
+	cout << "ans: ";
+	for (int i = 0; i < answer.size(); i++)		
+		cout << answer[i] << " -> ";
 	
 	
 	
@@ -115,11 +111,9 @@ int main(int argc, char* argv[]){
 	ofs << "CPU Run time: " << run_time << endl;
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	ofs << "Word ladder number: " << answer.size() << endl;
-	if (answer.size() > 0){
-		cout << "ans: ";
-		for (int i = 0; i < answer.size(); i++)		
-			cout << answer[i] << " -> ";
-	}
+	cout << "ans: ";
+	for (int i = 0; i < answer.size(); i++)		
+		cout << answer[i] << " -> ";
 		
 	ofs.close();
 	
