@@ -10,7 +10,7 @@ using namespace std;
 
 int num;
 int digit ;
-long long factor = pow(10,digit);
+long long factor;
 int looptime ;
 
 void swap(long long *x,long long *y)
@@ -90,7 +90,7 @@ int main(int argc, char* argv[]){
 	looptime = 0;
 	for(int kk=0;argv[4][kk]!=0;kk++)
 		looptime = looptime*10 + (argv[4][kk]-48);
-
+	factor = pow(10,digit);
 	cout <<digit <<" "<<looptime<<endl;
 	/* Input data from the file */
 	
@@ -119,7 +119,7 @@ int main(int argc, char* argv[]){
 	cout << "=====  Answer Report  =====" << endl;
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
-	cout << "ans: ";
+	//cout << "ans: ";
 	//printarray(a);
 	
 	
