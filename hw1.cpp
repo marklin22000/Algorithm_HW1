@@ -84,11 +84,12 @@ int main(int argc, char* argv[]){
 		return -1;
 	}
 	digit = 0;
-	looptime = 0;
 	for(int kk=0;argv[3][kk]!=0;kk++)
-		digit +=(argv[3][kk]-48)*pow(10,kk);
+		digit = digit*10 + (argv[3][kk]-48);
+
+	looptime = 0;
 	for(int kk=0;argv[4][kk]!=0;kk++)
-		looptime +=(argv[4][kk]-48)*pow(10,kk);
+		looptime = looptime*10 + (argv[4][kk]-48);
 
 	cout <<digit <<" "<<looptime<<endl;
 	/* Input data from the file */
