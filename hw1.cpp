@@ -84,8 +84,8 @@ int main(int argc, char* argv[]){
 		return -1;
 	}
 
-	digit = argv[3]-48;
-	looptime = argv[4]-48;
+	digit = *argv[3]-48;
+	looptime = *argv[4]-48;
 	/* Input data from the file */
 	
 	ifs >> num;
