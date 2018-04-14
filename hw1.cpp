@@ -38,7 +38,7 @@ void quicksort(int p, long long *a, int l, int r)
 		i = l-1;
 		for(j=l; j<r;j++)
 		{		
-			cout<<(a[j]/d)%factor <<" ,"<<x<<endl;	
+			cout<<(a[j]/d) <<" ,"<<x<<endl;	
 			if( (a[j]/d)%factor <= x)
 			{
 				i++;
