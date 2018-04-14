@@ -33,7 +33,7 @@ void quicksort(long long *a, int l, int r)
 	long long x;
 	int i;
 	int j;
-	long long d = pow(factor,p);
+	//long long d = pow(factor,p);
 	if(l<r)
 	{
 		x = a[r];
