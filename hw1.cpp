@@ -110,7 +110,6 @@ int main(int argc, char* argv[]){
 	ofs << "=====  Answer Report  =====" << endl;
 	ofs << "CPU Run time: " << run_time << endl;
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
-	ofs << "Word ladder number: " << answer.size() << endl;
 	cout << "ans: ";
 	for (int i = 0; i < answer.size(); i++)		
 		cout << answer[i] << " -> ";
