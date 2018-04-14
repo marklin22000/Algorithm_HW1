@@ -8,7 +8,7 @@
 using namespace std;
 
 int num;
-int digit = 0;
+int digit = 100;
 long long factor = 10^digit;
 
 void swap(long long *x,long long *y)
