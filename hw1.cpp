@@ -23,7 +23,7 @@ void printarray(long long *a)
 {
 	for (int ii = 0; ii < num-1; ii++)		
 			cout << a[ii] << " -> ";
-		cout<< a[ii+1]<<endl;
+		cout<< a[num-1]<<endl;
 }
 
 void quicksort(int p, long long *a, int l, int r)
