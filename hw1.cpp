@@ -19,6 +19,13 @@ void swap(long long *x,long long *y)
 	*y = temp;
 }
 
+void printarray(long long *a)
+{
+	for (int ii = 0; ii < num-1; ii++)		
+			cout << a[ii] << " -> ";
+		cout<< a[ii+1]<<endl;
+}
+
 void quicksort(int p, long long *a, int l, int r)
 {
 	long long x;
@@ -38,8 +45,7 @@ void quicksort(int p, long long *a, int l, int r)
 			}
 		}
 		swap(&a[i+1],&a[r]);
-		for (int ii = 0; ii < num; ii++)		
-			cout << a[ii] << " -> ";
+		printarray(a);
 		quicksort(p,a,l,i);
 		quicksort(p,a,i+2,r);
 	}
@@ -104,8 +110,7 @@ int main(int argc, char* argv[]){
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	for (int i = 0; i < num; i++)		
-		cout << a[i] << " -> ";
+	printarray(a);
 	
 	
 	
