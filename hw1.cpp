@@ -110,7 +110,7 @@ int main(int argc, char* argv[]){
 	ofs << "=====  Answer Report  =====" << endl;
 	ofs << "CPU Run time: " << run_time << endl;
 	ofs << "Mem Usage:    " << r_usage.ru_maxrss << endl;
-	ofs << "ans: "
+	ofs << "ans: ";
 	for (int i = 0; i < num; i++)		
 		ofs << a[i] << " -> ";
 		
