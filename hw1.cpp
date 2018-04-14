@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <vector>
 #include <ctime>
 #include <unistd.h>
 #include <sys/resource.h>
 #include <math.h>
+#include <stdio.h>
 using namespace std;
 
 int num;
@@ -83,8 +83,8 @@ int main(int argc, char* argv[]){
 		cout << "Output file: " << argv[2] << " cannot be opened." << endl;
 		return -1;
 	}
-	digit = (int)(argv[3]);
-	looptime = (int)(argv[4]);
+	digit = atoi(argv[3]);
+	looptime = atoi(argv[4]);
 	/* Input data from the file */
 	
 	ifs >> num;
