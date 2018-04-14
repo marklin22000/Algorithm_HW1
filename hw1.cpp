@@ -43,7 +43,7 @@ void quicksort(int p, long long *a, int l, int r)
 			{
 				i++;
 				swap(&a[i],&a[j]);
-				printarray(a);
+				//printarray(a);
 			}
 		}
 		swap(&a[i+1],&a[r]);
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]){
 	cout << "CPU Run time: " << run_time << endl;
 	cout << "Mem Usage:    " << r_usage.ru_maxrss << endl;
 	cout << "ans: ";
-	printarray(a);
+	//printarray(a);
 	
 	
 	
