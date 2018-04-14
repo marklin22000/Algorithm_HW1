@@ -38,11 +38,12 @@ void quicksort(int p, long long *a, int l, int r)
 		i = l-1;
 		for(j=l; j<r;j++)
 		{
-			printarray(a);
+			
 			if( (a[j]/d)%factor <= x)
 			{
 				i++;
 				swap(&a[i],&a[j]);
+				printarray(a);
 			}
 		}
 		swap(&a[i+1],&a[r]);
