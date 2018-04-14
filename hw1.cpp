@@ -9,7 +9,7 @@ using namespace std;
 
 int num;
 int digit = 100;
-long long factor = 10^digit;
+long long factor = pow(10,digit);
 
 void swap(long long *x,long long *y)
 {
@@ -31,14 +31,13 @@ void quicksort(int p, long long *a, int l, int r)
 	long long x;
 	int i;
 	int j;
-	long long d = factor^(p);
+	long long d = pow(factor,p);
 	if(l<r)
 	{
 		x = (a[r]/d)%factor;
 		i = l-1;
 		for(j=l; j<r;j++)
-		{		
-			cout<<d <<" ,"<<x<<endl;	
+		{			
 			if( (a[j]/d)%factor <= x)
 			{
 				i++;
