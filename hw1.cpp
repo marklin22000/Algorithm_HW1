@@ -37,11 +37,11 @@ void quicksort(int p, long long *a, int l, int r)
 		x = (a[r]/d)%factor;
 		i = l-1;
 		for(j=l; j<r;j++)
-		{
-			
+		{			
 			if( (a[j]/d)%factor <= x)
 			{
 				i++;
+				cout<<"i="<<i<<" j="<<j<<endl;
 				swap(&a[i],&a[j]);
 				printarray(a);
 			}
