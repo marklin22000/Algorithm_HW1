@@ -72,7 +72,8 @@ void sort(int num,long long *a){
 
 int main(int argc, char* argv[]){
 	/* Input check */
-	if (argc < 5){
+	if (argc < 3){
+	//if (argc < 5){
 		cout << "Usage: " << argv[0] << " <input_file> <output_file> <digit> <looptime>" << endl;
 		return -1;
 	}
